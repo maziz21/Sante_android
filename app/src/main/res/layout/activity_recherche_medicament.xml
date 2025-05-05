@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_medic_background"
+    android:padding="16dp">
+
+    <!-- Champ de recherche -->
+    <LinearLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_search_bar"
+        android:padding="8dp"
+        android:elevation="4dp">
+
+        <EditText
+            android:id="@+id/etRecherche"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Rechercher"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnRechercher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECHERCHER"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+    <!-- Résultats -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMedicaments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchContainer"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

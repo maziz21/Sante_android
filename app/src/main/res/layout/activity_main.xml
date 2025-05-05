@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/im1">
+
+
+    <TextView
+        android:id="@+id/tvTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Mon Carnet Médical"
+        android:textColor="#1976D2"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRechercheMedicament"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rechercher un médicament"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnMesOrdonnances"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mes ordonnances"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnRendezVous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mes rendez-vous"/>
+</LinearLayout>
